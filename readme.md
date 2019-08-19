@@ -6,7 +6,9 @@ Minified size < 1kb.
 
 #### Install:
 
-    git clone https://github.com/dambrogia/simple-grid-tailwind && cd $_1 && yarn
+    git clone https://github.com/dambrogia/simple-grid-tailwind
+    cd simple-grid-tailwind
+    yarn
 
 #### Configure your grid:
 
