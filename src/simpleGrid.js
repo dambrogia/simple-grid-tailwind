@@ -8,13 +8,16 @@ const simpleGrid = postcss.plugin('Simple Grid', (opts) => {
   const scope = typeof opts.scope === 'undefined' ? '' : opts.scope;
   // Assert if the given selector matches any of the provided regex expressions.
   const match = (sel) => regexPatterns.some((regex) => sel.match(regex) !== null);
-  // Assign the scope to node if applicable.
-  const rename = (node) => node.selector = scope === '' ? node.selector : `${scope} ${node.selector}`;
-  // Filter the nodes based on regex matches.
-  const filter = (node) => (match(node.selector) && rename(node.selector)) || node.remove();
+
   // Walk/iterate over every node and filter it based on given regexes.
   return (root) => root.walk((node) => {
-    if (node.type === 'rule') filter(node);
+    if (node.type === 'rule') {
+      if (match(node.selector)) {
+        node.selector = scope === '' ? node.selector : `${scope} ${node.selector}`;
+      } else {
+        node.remove();
+      }
+    }
   });
 });
 
