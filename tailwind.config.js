@@ -2,17 +2,9 @@ module.exports = {
   theme: {
     // Add/remove as needed to control dist size.
     screens: {
-      lg: '992px',
-      xl: '1200px',
-    },
-    // Use flex for column widths.
-    flex: {
-      '1': '0 0 100%',
-      '1/2': '0 0 50%',
-      '1/3': '0 0 33.3%',
-      '1/4': '0 0 25%',
-      '2/3': '0 0 66.6%',
-      '3/4': '0 0 75%',
+      sm: '756px',
+      md: '992px',
+      lg: '1200px',
     },
     // Apply margin and padding for gutter widths.
     margin: {
@@ -21,12 +13,19 @@ module.exports = {
     padding: {
       '15': '15px',
     },
-    // Allows usage for containers
+    // Width for columns and containers.
     width: {
-      1100: '1100px',
+      '1/4': '25%',
+      '1/3': '33.3%',
+      '1/2': '50%',
+      '2/3': '66.6%',
+      '3/4': '75%',
+      '1/1': '100%',
+      '800': '800px',
+      '1100': '1100px',
     },
     maxWidth: {
-      full: '100%',
+      'full': '100%',
     },
     colors: {},
     spacing: {},
@@ -40,13 +39,10 @@ module.exports = {
     container: {},
     cursor: {},
     fill: {},
+    flex: {},
     flexGrow: {},
     flexShrink: {},
-    fontFamily: {
-      sans: ['x'],
-      serif: ['x'],
-      mono: ['x'],
-    },
+    fontFamily: {},
     fontSize: {},
     fontWeight: {},
     height: {},

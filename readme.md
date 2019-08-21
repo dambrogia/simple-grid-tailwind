@@ -2,7 +2,7 @@
 
 A simple grid creator with tailwind. Generate only the CSS you need, and add a unique scope so it doesn't screw up what's already there.
 
-Minified size < 1kb.
+Default size 1.5KB. (Can increase or decrease depending on needs)
 
 #### Install:
 
