@@ -3,11 +3,11 @@ module.exports = {
     // Add/remove as needed to control dist size.
     screens: {
       lg: '992px',
-      xl: '1200px'
+      xl: '1200px',
     },
     // Use flex for column widths.
     flex: {
-      '1': '0 0 100%',
+      1: '0 0 100%',
       '1/2': '0 0 50%',
       '1/3': '0 0 33.3%',
       '1/4': '0 0 25%',
@@ -19,21 +19,21 @@ module.exports = {
       '-15': '-15px',
     },
     padding: {
-      '15': '15px',
+      15: '15px',
     },
     // Allows usage for containers
     width: {
-        '1100': '1100px'
+      1100: '1100px',
     },
     maxWidth: {
-        'full': '100%'
+      full: '100%',
     },
     colors: {},
     spacing: {},
-    backgroundColor: theme => theme('colors'),
+    backgroundColor: (theme) => theme('colors'),
     backgroundPosition: {},
     backgroundSize: {},
-    borderColor: theme => ('colors'),
+    borderColor: (theme) => theme('colors'),
     borderRadius: {},
     borderWidth: {},
     boxShadow: {},
@@ -43,9 +43,9 @@ module.exports = {
     flexGrow: {},
     flexShrink: {},
     fontFamily: {
-      sans: [],
-      serif: [],
-      mono: [],
+      sans: ['x'],
+      serif: ['x'],
+      mono: ['x'],
     },
     fontSize: {},
     fontWeight: {},
@@ -135,4 +135,4 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [],
-}
+};
