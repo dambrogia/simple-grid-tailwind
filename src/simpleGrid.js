@@ -11,9 +11,11 @@ const simpleGrid = postcss.plugin('Simple Grid', (opts) => {
   // Assign the scope to node if applicable.
   const rename = (node) => node.selector = scope === '' ? node.selector : `${scope} ${node.selector}`;
   // Filter the nodes based on regex matches.
-  const filter = (node) => (match(node.selector) && rename(node)) || node.remove();
+  const filter = (node) => (match(node.selector) && rename(node.selector)) || node.remove();
   // Walk/iterate over every node and filter it based on given regexes.
-  return (root) => root.walk((node) => node.type === 'rule' && filter(node));
+  return (root) => root.walk((node) => {
+    if (node.type === 'rule') filter(node);
+  });
 });
 
 module.exports = simpleGrid;
