@@ -9,10 +9,10 @@ const argv = require('minimist')(process.argv.slice(2));
  */
 const getScopeFromCli = () => {
   // minimist will translate --no-scope to scope === false.
-  if (argv['scope'] === false) {
+  if (argv.scope === false) {
     return '';
-  } else if (argv['scope'] !== undefined) {
-    return argv['scope']
+  } if (argv.scope !== undefined) {
+    return argv.scope;
   }
   // Defaults to shorthand 'simple grid' scope
   return '.sg';
@@ -22,6 +22,6 @@ const getScopeFromCli = () => {
  * Assert if minification should be enabled. Defaults to true.
  * @return bool
  */
-const getMinifyFromCli = () => argv['min'] === false ? false : true;
+const getMinifyFromCli = () => (argv.min !== false);
 
-module.exports = { getScopeFromCli, getMinifyFromCli }
+module.exports = { getScopeFromCli, getMinifyFromCli };

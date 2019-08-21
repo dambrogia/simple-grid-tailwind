@@ -1,1 +1,16 @@
+/**
+ * Generated using Simple Grid with tailwind.
+ * @see https://github.com/dambrogia/simple-grid-tailwind
+ */
+
 @tailwind utilities;
+
+.flex-row {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.flex-row * {
+  box-sizing: border-box;
+}
