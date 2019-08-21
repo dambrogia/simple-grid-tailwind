@@ -9,9 +9,9 @@ module.exports = [
   // Columns
   /flex-[0-9]/,
   // Gutters
-  /-mx-[0-9]/,
-  /px-[0-9]/,
+  /(^\.|:)-mx-[0-9]/,
+  /(^\.|:)px-[0-9]/,
   // Containers
-  /max-w-/,
-  /w-/,
+  /(^\.|:)max-w-/,
+  /(^\.|:)w-/,
 ];
