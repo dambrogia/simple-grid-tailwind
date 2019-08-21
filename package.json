@@ -5,7 +5,7 @@
   "scripts": {
     "build": "postcss ./src/style.scss -o dist/compiled.css",
     "debug": "node --inspect-brk=9229 --nolazy ./node_modules/.bin/postcss ./src/style.scss -o dist/compiled.css",
-    "lint": "eslint src"
+    "lint": "eslint src ./*.js"
   },
   "author": "Dominic Dambrogia <domdambrogia@gmail.com>",
   "license": "MIT",
