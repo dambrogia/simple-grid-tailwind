@@ -7,12 +7,11 @@ module.exports = [
   /flex-row$/,
   /flex-row */,
   // Columns
-  /flex-[0-9]/,
+  /(^\.|:)w-/,
   // Gutters
   /(^\.|:)-mx-[0-9]/,
-  /(^\.|:)mx-[0-9]/,
   /(^\.|:)px-[0-9]/,
   // Containers
   /(^\.|:)max-w-/,
-  /(^\.|:)w-/,
+  /(^\.|:)mx-[0-9]/,
 ];
