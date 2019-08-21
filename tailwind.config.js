@@ -9,6 +9,7 @@ module.exports = {
     // Apply margin and padding for gutter widths.
     margin: {
       '-15': '-15px',
+      'auto': 'auto',
     },
     padding: {
       '15': '15px',
