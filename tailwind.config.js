@@ -7,7 +7,7 @@ module.exports = {
     },
     // Use flex for column widths.
     flex: {
-      1: '0 0 100%',
+      '1': '0 0 100%',
       '1/2': '0 0 50%',
       '1/3': '0 0 33.3%',
       '1/4': '0 0 25%',
@@ -19,7 +19,7 @@ module.exports = {
       '-15': '-15px',
     },
     padding: {
-      15: '15px',
+      '15': '15px',
     },
     // Allows usage for containers
     width: {
